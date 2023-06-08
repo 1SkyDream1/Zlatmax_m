@@ -1,2 +1,2 @@
 # Интернет магазин "Zlatmax"
-- [Я ссылка, такай)](https://1skydream1.github.io/Zlatmax_m/)
+- [Я ссылка, тыкай 😁](https://1skydream1.github.io/Zlatmax_m/)
