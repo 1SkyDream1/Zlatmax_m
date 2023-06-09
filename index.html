@@ -9,6 +9,7 @@
 
 <body>
 	<div class="rootpage">
+		<div class="a"></div>
 		<h1>Верстка «Zlatmax»</h1>
 		<div class="rootpage__info">
 			Особенности проекта
@@ -32,7 +33,7 @@
 			<h2>Мои контакты:</h2>
 			<p>Почта: <a href="mailto:pivneko.ilya@yandex.ru">pivneko.ilya@yandex.ru</a></p>
 			<p>Телефон: <a href="tel:+79082077681">+7 908-207 76 81</a></p>
-			<p>Телеграм: <a href="https://t.me/SkyDream101">https://t.me/SkyDream101</a></p>
+			<p>Телеграм: <a target="_blank" href="https://t.me/SkyDream101">https://t.me/SkyDream101</a></p>
 		</div>
 	</div>
 </body>
@@ -49,7 +50,6 @@
 		box-sizing: border-box;
 	}
 
-	html,
 	body {
 		height: 100%;
 		margin: 0;
@@ -57,7 +57,22 @@
 		min-width: 320px;
 		width: 100%;
 		color: #fff;
-		background-color: #5e5373;
+		background: url('@img/sea.jpg') center center no-repeat;
+		background-size: cover;
+		position: relative;
+	}
+
+
+	body::before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		background: #000;
+		width: 100%;
+		height: 100%;
+		opacity: 0.5;
+		z-index: 1;
 	}
 
 	body {
@@ -95,13 +110,15 @@
 	}
 
 	.rootpage {
+		position: relative;
+		z-index: 5;
 		padding: 30px;
 		display: flex;
 		flex-direction: column;
 		align-items: flex-start;
 	}
 
-	@media (max-width: 767px) {
+	.rootpage @media (max-width: 767px) {
 		.rootpage {
 			padding: 30px 15px;
 		}
@@ -163,7 +180,7 @@
 	}
 
 	.rootpage__contacts {
-		background: #c2acea;
+		background: #0061e8a4;
 		transition: all 0.3s ease 0s;
 	}
 
@@ -176,7 +193,7 @@
 	}
 
 	.rootpage__tnx {
-		background: #c2acea;
+		background: #0061e8a4;
 		transition: all 0.3s ease 0s;
 		margin: 0px 0px 1rem 0px;
 	}
