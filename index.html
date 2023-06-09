@@ -51,13 +51,13 @@
 	}
 
 	body {
-		height: 100%;
+		min-height: 100vh;
 		margin: 0;
 		padding: 0;
 		min-width: 320px;
 		width: 100%;
 		color: #fff;
-		background: url('@img/sea.jpg') center center no-repeat;
+		background: url('img/sea.jpg') center center repeat-y;
 		background-size: cover;
 		position: relative;
 	}
@@ -118,7 +118,7 @@
 		align-items: flex-start;
 	}
 
-	.rootpage @media (max-width: 767px) {
+	@media (max-width: 767px) {
 		.rootpage {
 			padding: 30px 15px;
 		}
